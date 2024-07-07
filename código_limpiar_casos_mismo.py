@@ -164,29 +164,29 @@ df.to_excel("Telefono_del_paciente.xlsx", index = False)
 
 #CODIGO PARA EL NOMBRE DEL PACIENTE
 
-df = pd.read_excel("Telefono_del_paciente.xlsx")
+df = pd.read_excel("Formato_mayus.xlsx")
 
 
 mismosA = [
-",M.A.",
-"|M.A.",
-"MISMO AFILIADO",
-"MISMOS AFILIADOS",
-"Mismo afiliado",
-"MISMA AFILIADA",
-"MISMO AFILIADO Y SUS BEBES RECIEN NACIDOS"
+"M. AFILIAFA",
+"M.A",
+"M.A-",
+"M.A.",
+"M.AA",
+"M.AFILIADA",
+"M.AFILIADO"
 ]
 
 mismosH = [
-"MISMO HUESPED",
-"EL MISMO HUESPED",
-"MISMA HUESPED",
-"MISMO",
-"EL MISMO",
-"LA MISMA",
-"MISMA HUESPED Y MATEO VALLADARES",
-"MISMA HUESPED Y RECIEN NACIDAS",
-"ELLA MISMA"
+"M-H",
+"MH.",
+"M.H",
+"M.H-",
+"M.H,.",
+"M.H.",
+"M.H. Y SU BEBE",
+"M. H.",
+"M.H"
 ]
 
 #Function que concatene los nombres por si es huesped.
@@ -207,8 +207,24 @@ def encontrar_mismos(row):
         return nombre_paciente
 
 
-
 df["Nombre del paciente"] = df.apply(encontrar_mismos, axis = 1)
 
+"""
+
 df.to_excel("Nombre_del_paciente.xlsx", index = False)
+"""
+
+#Código para dar formato de mayúscula a algunas columnas.
+"""
+df = pd.read_excel("Nombre_del_paciente.xlsx")
+"""
+
+
+"""
+
+df = df.applymap(lambda x: x.upper() if type(x) == str else x)
+"""
+
+
+df.to_excel("NOMBRE_ARREGLO.xlsx", index = False)
 
