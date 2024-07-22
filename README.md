@@ -1,4 +1,4 @@
-# Analysis of Casa David data
+## Analysis of Casa David data
 > Social security registration data 2017-2020
 
 ## Authors
@@ -29,4 +29,12 @@ duplicate, incoherent, and generally very dirty data. As a result, it was not po
 - Power BI and Power Query
 - Excel
 
+## Data Visualization
+![image](https://github.com/user-attachments/assets/84b32fa5-223f-4782-890d-65cc2f7c99ec)
+The generated dashboard is 100% interactive, with precise and clean data.
+
+## Limitations and what can be improved
+- Obtain data from different hospitals where Casa David works to have national data.
+- Work with more complex graphs to obtain descriptive statistics.
+- During the cleanup, some records had to be removed.
   
