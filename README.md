@@ -33,6 +33,9 @@ duplicate, incoherent, and generally very dirty data. As a result, it was not po
 ![image](https://github.com/user-attachments/assets/84b32fa5-223f-4782-890d-65cc2f7c99ec)
 The generated dashboard is 100% interactive, with precise and clean data.
 
+## Interaction with Dashboard
+https://app.powerbi.com/view?r=eyJrIjoiZTk2NGFhNzktYzcxMC00N2FjLWI0Y2QtMTMwZTc3YTdhZTkzIiwidCI6ImFmMmZkMTk2LTFkOWYtNDdiNC05MDY5LTM5MWE0NmY4MzYwMSIsImMiOjR9
+
 ## Limitations and what can be improved
 - Obtain data from different hospitals where Casa David works to have national data.
 - Work with more complex graphs to obtain descriptive statistics.
